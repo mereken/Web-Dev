@@ -1,16 +1,27 @@
 import { Component } from '@angular/core';
-import { ProductsComponent } from './products/products.component';
+import { CommonModule } from '@angular/common';
+import { CategoryComponent } from './category/category.component'; 
+import { ProductListComponent } from './product-list/product-list.component';
+import { Category } from './category.model'; 
+import { Product } from './product.model'; 
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProductsComponent], 
-  template: `<app-products></app-products>`,
+  imports: [CommonModule, CategoryComponent, ProductListComponent], 
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab4';
-  constructor() {
-    console.log('AppComponent загружен');
+  selectedCategory: Category | null = null;
+  products: Product[] = [];
+
+  selectCategory(category: Category) {
+    const categoryProducts = this.products.filter(p => p.category === category.name);
+    this.selectedCategory = { ...category, products: categoryProducts };
   }
+  
 }
+
+
