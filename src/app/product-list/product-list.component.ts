@@ -16,15 +16,14 @@ export class ProductListComponent {
   @Input() category!: Category;
   products: Product[] = [
     {
-      
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hb5/hc5/86078683545630.jpg?format=gallery-medium',
       name: 'Смарт-часы Huawei Watch Fit 3 серебристый-белый-белый',
       description: 'С HUAWEI WATCH FIT 3 здоровый образ жизни доступен каждому. Раздвигая границы отображаемого контента. Поверните ваше запястье, чтобы увидеть всю необходимую информацию на большом квадратном экране. ',
       rating: 4.0,
       link: 'https://kaspi.kz/shop/p/xiaomi-mdy-12-es-67w-usb-type-c-usb-belyi-106897965/?c=750000000 ',
       category: 'Смарт-часы',
-      likes: 2
-    
+      likes: 2,
+      id: undefined
     },
 
     {
@@ -34,8 +33,8 @@ export class ProductListComponent {
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/apple-watch-se-gps-gen-2-2024-s-m-40-mm-bezhevyi-129172890/?c=750000000',
       category: 'Смарт-часы',
-      likes: 2
-    
+      likes: 2,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p00/p18/7079036.png?format=gallery-large ',
@@ -44,8 +43,8 @@ export class ProductListComponent {
       rating: 4.9,
       link: 'https://kaspi.kz/shop/p/apple-watch-se-gps-gen-2-2024-s-m-40-mm-chernyi-chernyi-129672957/?c=750000000 ',
       category: 'Смарт-часы',
-      likes: 10
-    
+      likes: 10,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf3/h65/87295470731294.png?format=gallery-large ',
@@ -54,8 +53,8 @@ export class ProductListComponent {
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/apple-iphone-16-128gb-chernyi-123713453/?c=750000000 ',
       category: 'Смартфоны Apple',
-      likes: 42
-    
+      likes: 42,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h41/h98/87295491702814.png?format=gallery-medium ',
@@ -63,9 +62,9 @@ export class ProductListComponent {
       description: ' Флагманский IPhone 16 Pro Max вобрал в себя лучшие черты современного гаджета. ',
       rating: 4.5,
       link: 'https://kaspi.kz/shop/p/apple-iphone-16-pro-max-256gb-zolotistyi-123890547/?c=750000000 ',
-      category:'Смартфоны Apple' ,
-      likes: 50
-    
+      category: 'Смартфоны Apple',
+      likes: 50,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h35/h47/87295471124510.png?format=gallery-medium ',
@@ -74,7 +73,8 @@ export class ProductListComponent {
       rating: 5.0,
       link: ' https://kaspi.kz/shop/p/apple-iphone-16-128gb-belyi-123726722/?c=750000000',
       category: 'Смартфоны Apple',
-      likes: 33
+      likes: 33,
+      id: undefined
     },
 
 
@@ -85,19 +85,19 @@ export class ProductListComponent {
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/sony-zve10lb-cec-ru-128437333/?c=750000000',
       category: 'Фотокамеры',
-      likes: 155
-    
+      likes: 155,
+      id: undefined
     },
 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/he2/h91/63988341800990.jpg?format=gallery-medium',
       name: 'Фотокамера Canon EOS 2000D kit EF-s 18-55mm f/3.5-5.6 III черный',
       description: 'Легко создавайте высококлассные фотографии с высокой детализацией и видео Full HD кинематографического качества даже в условиях слабого освещения с помощью 24,1-мегапиксельной камеры EOS 2000D. ',
-      rating:4.8 ,
+      rating: 4.8,
       link: 'https://kaspi.kz/shop/p/canon-eos-2000d-kit-ef-s-18-55mm-f-3-5-5-6-iii-chernyi-100932167/?c=750000000 ',
       category: 'Фотокамеры',
-      likes: 12
-    
+      likes: 12,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h09/hd9/63758980644894.jpg?format=gallery-medium ',
@@ -106,39 +106,39 @@ export class ProductListComponent {
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/canon-powershot-g7x-mark-ii-chernyi-2200949/?c=750000000 ',
       category: 'Фотокамеры',
-      likes: 75
-    
+      likes: 75,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pa0/pc8/20118457.png?format=gallery-large ',
       name: 'Смартфон Samsung Galaxy S25 Ultra 5G 12 ГБ/256 ГБ серый ',
-      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего · Официальная гарантия. Рассрочка до 24 месяцев. Ночная съемка. Легкий алюминиевый корпус.   ',
+      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего. Легкий алюминиевый корпус.   ',
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-s25-ultra-5g-12-gb-256-gb-seryi-133434844/?c=750000000 ',
       category: 'Смартфоны Samsung',
-      likes: 36
-    
+      likes: 36,
+      id: undefined
     },
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pab/p54/20116700.png?format=gallery-large ',
       name: 'Смартфон Samsung Galaxy S25+ 5G 12 ГБ/256 ГБ розовый ',
-      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего · Официальная гарантия. Рассрочка до 24 месяцев. Ночная съемка. Легкий алюминиевый корпус.   ',
+      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего. Ночная съемка. Легкий алюминиевый корпус.   ',
       rating: 0,
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-s25-5g-12-gb-256-gb-rozovyi-133434365/?c=750000000 ',
-      category:'Смартфоны Samsung',
-      likes: 45
-    
+      category: 'Смартфоны Samsung',
+      likes: 45,
+      id: undefined
     },
 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h7c/h38/84963297329182.png?format=gallery-large ',
       name: ' Смартфон Samsung Galaxy S24 Ultra 5G 12 ГБ/256 ГБ серый',
-      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего · Официальная гарантия. Рассрочка до 24 месяцев. Ночная съемка. Легкий алюминиевый корпус.  ',
+      description: 'Новый Galaxy S25 – Искусственный интеллект Galaxy и технологии будущего. Ночная съемка. Легкий алюминиевый корпус.  ',
       rating: 5.0,
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-s24-ultra-5g-12-gb-256-gb-seryi-116043556/?c=750000000 ',
-      category:'Смартфоны Samsung' ,
-      likes: 44
-    
+      category: 'Смартфоны Samsung',
+      likes: 44,
+      id: undefined
     }
     
   ];

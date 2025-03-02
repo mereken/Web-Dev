@@ -12,8 +12,7 @@ import { Product } from '../product.model';
 })
 export class ProductItemComponent {
   @Input() product!: Product;
-  currentImageIndex = 0;
-
+  
   likeProduct() {
     this.product.likes++;
   }
@@ -28,5 +27,8 @@ export class ProductItemComponent {
     window.open(telegramUrl, '_blank');
   }
 
+  
 
 }
+
+
