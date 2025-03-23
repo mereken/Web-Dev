@@ -1,0 +1,134 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#image{
+    float: left;
+    margin-left: 365px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+#input{
+    float: right;
+    border: 1px solid #DBDBDB;
+    margin-top: 25px;
+    margin-right: 365px;
+    padding-top: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#p1{
+    float: right;
+    margin-right: 364px;
+    border: 1px solid #DBDBDB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: 600;
+}
+#reg{
+    text-decoration: none;
+    color:#0095F6;
+}
+#p2{
+   float:right;
+   margin-right: 470px;
+   font-size: smaller;
+   font-weight: 600;
+   margin-top: 10px;
+}
+input{
+    width: 260px;
+    height: 35px;
+    margin-bottom: 7px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+}
+input::placeholder{
+    color: #8E8E8E;
+    font-size: smaller;
+    padding-left: 7px;
+}
+input:focus{
+    border:1px solid #012842;
+}
+button{
+    width: 269px;
+    background-color: #0094f6ae;
+    border: 0px solid #0095F6;
+    margin-top: 10px;
+    height: 35px;
+    color: white;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+#play{
+    position: absolute;
+    left: 815px;
+    top: 610px;
+}
+#micro{
+    position: absolute;
+    left: 970px;
+    top: 620px;
+}
+#bottom{
+    text-align: center;
+    margin-top: 670px;
+}
+.bott:hover{
+    text-decoration: underline;
+}
+.bott{
+    text-decoration: none;
+    color:#8E8E8E;
+    padding-inline: 6px;
+    font-size: smaller;
+}
+select{
+    float: left;
+    margin-left: 40%;
+    border: none;
+}
+select:optional{
+    color:#8E8E8E;
+    font-size: smaller;
+    margin-right:10px;
+}
+#facebook{
+    text-decoration: none;
+    color: #0095F6;
+    text-align: center;
+    font-weight: 600;
+    font-size: smaller;
+}
+#facebook:hover{
+    color:#012842;
+}
+#forgot{
+    text-decoration: none;
+    color:#012842;
+    font-size: smaller;
+    margin-left: 85px;
+    padding-top: 40px;
+}
+#insta{
+    padding-left: 37px;
+    padding-bottom: 25px;
+}
+#ili{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #8E8E8E;
+}
+#f{
+    margin-left: 35px;
+}
+#last{
+    color:#8E8E8E;
+    font-size: smaller;
+}
